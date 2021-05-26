@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Permutations {
     public static void main(String[] args) {
-        int[] nums = new int[]{1,2,3, 4};
+        int[] nums = new int[]{1, 2, 3, 4};
         Solution solution = new Solution();
         List<List<Integer>> permutations = solution.permute(nums);
 

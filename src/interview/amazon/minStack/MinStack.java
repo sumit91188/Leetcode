@@ -12,7 +12,7 @@ import java.util.Stack;
  *     stack. top() — Get the top element. getMin() — Retrieve the minimum element in the stack.
  */
 public class MinStack {
-  int minEle = Integer.MIN_VALUE;
+  int minEle = Integer.MAX_VALUE;
   Stack<Integer> stack = new Stack<>();
 
   public MinStack() {}
@@ -34,6 +34,7 @@ public class MinStack {
   }
 
   public int getMin() {
+
     return minEle;
   }
 }

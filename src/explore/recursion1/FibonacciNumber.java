@@ -24,7 +24,7 @@ public class FibonacciNumber {
         return hashMap.get(num);
       }
 
-      int result = 0;
+      int result;
       if (num < 2) {
         result = num;
       }

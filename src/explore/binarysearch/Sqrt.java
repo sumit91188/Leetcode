@@ -37,8 +37,35 @@ public class Sqrt {
   }
 
   private static class Solution {
+    public double mySqrt(int i) {
+      /*if (i < 2) return i;
 
-    public int mySqrt(int num) {
+      double x0 = i;
+      double x1 = 0.5 * (x0 + i / x0);
+
+      while (Math.abs(x0 - x1) >= 1) {
+        x0 = x1;
+        x1 = 0.5 * (x0 + i / x0);
+      }
+
+      return x1;*/
+
+      //assume sqrt of i as i only
+      double x = i;
+
+      //closed guess
+      double root;
+
+      while (true) {
+        root = 0.5 * (x + i / x);
+        if (Math.abs(root - x) < 0.5) break;
+        x = root;
+      }
+
+      return root;
+    }
+
+    /*public int mySqrt(int num) {
 
       if (num < 2) {
         return num;
@@ -62,6 +89,8 @@ public class Sqrt {
       }
 
       return (int) right;
-    }
+    }*/
+
+
   }
 }

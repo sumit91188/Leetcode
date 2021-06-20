@@ -22,6 +22,7 @@ public class ReverseString {
   private static class Solution {
 
     public void reverseString(char[] chars) {
+
       helper(chars, 0, chars.length - 1);
     }
 

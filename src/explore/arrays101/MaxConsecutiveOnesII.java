@@ -21,7 +21,7 @@ public class MaxConsecutiveOnesII {
 
     public int findMaxConsecutiveOnes(int[] nums) {
       int maxConsecutiveOnes = 0;
-      int consecutiveOnes = 0;
+      int consecutiveOnes;
       for (int i = 0; i <= nums.length - 1; i++) {
         int j = i;
         boolean hasZero = false;

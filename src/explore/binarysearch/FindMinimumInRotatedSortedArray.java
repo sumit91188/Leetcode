@@ -8,7 +8,7 @@ package explore.binarysearch;
  */
 public class FindMinimumInRotatedSortedArray {
     public static void main(String[] args) {
-        int[] nums = new int[]{4,5,6,7,0,1,2};
+        int[] nums = new int[]{2,3,4,5,1};
         Solution solution = new Solution();
 
         System.out.println(solution.findMin(nums));
@@ -22,9 +22,14 @@ public class FindMinimumInRotatedSortedArray {
             while (leftIndex < rightIndex) {
                 int midIndex = leftIndex + (rightIndex - leftIndex) / 2;
 
-                if (nums[leftIndex] < nums[rightIndex] && nums[leftIndex] < nums[midIndex]){}
+                if (nums[midIndex] < nums[rightIndex]) {
+                    rightIndex = midIndex;
+                }
+                else {
+                    leftIndex = midIndex + 1;
+                }
             }
-            return 0;
+            return nums[leftIndex];
         }
     }
 }

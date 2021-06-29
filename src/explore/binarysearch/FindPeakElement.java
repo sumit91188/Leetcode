@@ -8,7 +8,7 @@ package explore.binarysearch;
  */
 public class FindPeakElement {
     public static void main(String[] args) {
-        int[] nums = new int[]{1,2,1,3,5,6,4};
+        int[] nums = new int[]{1,2,1,3,5,5,4};
         Solution solution = new Solution();
         System.out.println(solution.findPeakElement(nums));
     }

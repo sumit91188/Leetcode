@@ -1,7 +1,5 @@
 package explore.hashTable;
 
-import java.util.Arrays;
-import java.util.Hashtable;
 import java.util.LinkedList;
 
 /**

@@ -73,6 +73,7 @@ public class HashMapLinkedList {
                     if (pair.first.equals(key)) {
                         pair.second = value;
                         found = true;
+                        break;
                     }
                 }
                 if (!found)
